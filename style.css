@@ -1,3 +1,54 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  /* an image will only EVER take up 100% of it's PARENT container width. Never any more. */
+  max-width: 100%;
+  width: 800px;
+  position: relative;
+}
+
 body {
-  background-color: blueviolet;
+  background-color: rgb(88, 48, 48);
+  padding: 50px;
+  color: white;
+}
+
+.flexone {
+  margin: 0;
+  width: 800px;
+  padding-top: 30px;
+  padding-inline: 20px;
+  position: relative;
+  bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+.flexTwo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  width: 800px;
+  position: fixed;
+  top: 0px;
+  z-index: 200;
+}
+.button {
+  position: relative;
 }
